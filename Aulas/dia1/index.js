@@ -1,5 +1,4 @@
-//Tipos de variáveis primitivass
-
+//TIPOS DE DADOS PRIMITIVOS
 let itemName = "Pen" //String
 let itemPrice = 4 //Number
 let itemAvailable = true //Boolean
@@ -7,7 +6,9 @@ let itemColor = "BLue";
 let category = "Escolar"
 
 
-//Tipos de variáveis referenciais
+//TIPOS DE DADOS REFERENCIAIS
+
+//Class
 class Caneta {
     constructor(model, cor) {
         this.model = model;
@@ -17,10 +18,10 @@ class Caneta {
         }
     }
 }
-
 const caneta1 = new Caneta("bic", "Azul");
 caneta1.mudarCor("Vermelha");
 console.log(caneta1.cor);
+
 //Object
 let pen = {
     itemName: "Pen",
@@ -38,7 +39,7 @@ console.log(pen.itemColor);
 //Array
 let pessoas = ["Marcos", "Beatriz", "Pedro", "Betina"];
 
-//Funcition
+//Function
 function juntarPessoas(pessoa1, pessoa2) {
     return `As pessoas passadas nesta função são: ${pessoa1} e ${pessoa2}`
 }
